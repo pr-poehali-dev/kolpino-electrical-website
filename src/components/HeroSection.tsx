@@ -43,7 +43,23 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="cosmic-circle"></div>
               <div className="h-64 w-64 rounded-full bg-black/40 backdrop-blur-lg flex items-center justify-center p-8 border border-white/10 shadow-neon overflow-hidden">
-                <div className="lightning-animation"></div>
+                <div className="lightning-animation">
+                  <svg
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full h-full"
+                  >
+                    <path
+                      d="M40,15 L55,15 L45,50 L60,50 L25,85 L35,50 L20,50 Z"
+                      fill="#00BFFF"
+                      stroke="white"
+                      strokeWidth="1"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BoltIcon, PhoneIcon } from "lucide-react";
+import { PhoneIcon } from "lucide-react";
 import { SocialLinks } from "@/components/SocialLinks";
 
 export const Navbar = () => {
@@ -8,8 +8,22 @@ export const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-lg border-b border-white/10">
       <div className="container mx-auto flex items-center justify-between p-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="relative h-10 w-10 bg-lightning-yellow rounded-full flex items-center justify-center lightning-effect">
-            <BoltIcon className="h-6 w-6 text-black" />
+          <div className="lightning-logo">
+            <svg
+              className="lightning-logo-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 3L4 14H12L11 21L20 10H12L13 3Z"
+                fill="#FFC700"
+                stroke="#FFFFFF"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
           <span className="font-electro text-xl font-bold rainbow-text">
             Электрик Колпино
