@@ -3,54 +3,61 @@ import { PhoneIcon } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24">
-      {/* Background effects */}
-      <div className="absolute inset-0 cosmic-bg"></div>
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Animated stars background */}
+      <div className="absolute inset-0 bg-stars"></div>
       
+      {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold font-electro mb-6 leading-tight neon-glow">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-electric-blue via-neon-purple to-neon-pink animate-shimmer">
-                Электрик в Колпино
-              </span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-8">
+            <h1 className="text-4xl md:text-6xl font-bold cosmic-text">
+              <span className="block mb-2">Электрик</span>
+              <span className="block neon-glow text-electric-blue">Колпино</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Решение любых проблем с электричеством в вашем доме
+            <p className="text-xl md:text-2xl text-gray-300 max-w-xl">
+              Вызов электрика в городе Колпино по телефону <a href="tel:+79500308830" className="text-electric-blue hover:text-white transition-colors font-medium">+7 950 030 88 30</a>
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="tel:89500308830">
+            <div className="flex flex-wrap gap-4">
+              <a href="tel:+79500308830">
                 <Button size="lg" className="bg-gradient-to-r from-electric-blue to-neon-purple hover:from-neon-purple hover:to-electric-blue neon-pulse">
-                  <PhoneIcon className="mr-2 h-5 w-5" /> 8 950 030-88-30
+                  <PhoneIcon className="mr-2 h-5 w-5" /> Позвонить сейчас
                 </Button>
               </a>
-              <a href="https://wa.me/89500308830">
-                <Button size="lg" variant="outline" className="border-electric-blue text-electric-blue hover:text-white">
+              <a href="https://wa.me/79500308830">
+                <Button size="lg" variant="outline" className="border-green-500 text-green-400 hover:bg-green-500/20">
                   WhatsApp
+                </Button>
+              </a>
+              <a href="https://t.me/+79500308830">
+                <Button size="lg" variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500/20">
+                  Telegram
                 </Button>
               </a>
             </div>
           </div>
           
-          <div className="flex-1 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-gradient-to-br from-electric-blue/30 to-neon-purple/30 rounded-full animate-pulse"></div>
-              <div className="absolute inset-4 bg-gradient-to-tr from-neon-pink/20 to-lightning-yellow/20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg width="160" height="160" viewBox="0 0 100 100" className="text-lightning-yellow">
-                  <path 
-                    d="M50,5 L60,40 L90,40 L65,60 L75,95 L50,75 L25,95 L35,60 L10,40 L40,40 Z" 
-                    fill="currentColor"
-                    className="animate-pulse"
-                  />
-                </svg>
+          <div className="hidden md:flex justify-center items-center">
+            <div className="relative">
+              <div className="cosmic-circle"></div>
+              <div className="h-64 w-64 rounded-full bg-black/40 backdrop-blur-lg flex items-center justify-center p-8 border border-white/10 shadow-neon overflow-hidden">
+                <div className="lightning-animation"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      
+      {/* Floating elements */}
+      <div className="absolute bottom-12 left-0 right-0 flex justify-center">
+        <div className="animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-electric-blue">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+      </div>
+    </section>
   );
 };

@@ -4,7 +4,7 @@ export const SocialLinks = () => {
   return (
     <div className="flex gap-2">
       <a 
-        href="https://t.me/89500308830" 
+        href="https://t.me/+79500308830" 
         target="_blank" 
         rel="noopener noreferrer"
         className="hover:scale-110 transition-transform"
@@ -18,7 +18,7 @@ export const SocialLinks = () => {
         </Button>
       </a>
       <a 
-        href="https://wa.me/89500308830" 
+        href="https://wa.me/79500308830" 
         target="_blank" 
         rel="noopener noreferrer"
         className="hover:scale-110 transition-transform"

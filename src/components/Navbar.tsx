@@ -35,8 +35,8 @@ export const Navbar = () => {
           <div className="hidden sm:flex flex-col items-end">
             <div className="flex items-center gap-2">
               <PhoneIcon className="h-4 w-4 text-electric-blue" />
-              <a href="tel:89500308830" className="text-white font-medium neon-glow">
-                8 950 030-88-30
+              <a href="tel:+79500308830" className="text-white font-medium neon-glow">
+                +7 950 030 88 30
               </a>
             </div>
             <div className="flex gap-2">

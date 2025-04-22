@@ -33,7 +33,7 @@ export const Footer = () => {
           
           <div>
             <h3 className="text-lg font-medium text-white mb-4 neon-glow">Контакты</h3>
-            <p className="text-gray-300 mb-2">Телефон: <a href="tel:89500308830" className="hover:text-white transition-colors">8 950 030-88-30</a></p>
+            <p className="text-gray-300 mb-2">Телефон: <a href="tel:+79500308830" className="hover:text-white transition-colors">+7 950 030 88 30</a></p>
             <div className="flex gap-2 mb-4">
               <SocialLinks />
             </div>

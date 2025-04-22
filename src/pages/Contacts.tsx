@@ -37,13 +37,13 @@ const Contacts = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-300">Звоните в любое время</p>
-                      <a href="tel:89500308830" className="text-xl font-medium text-white hover:text-electric-blue transition-colors">
-                        8 950 030-88-30
+                      <a href="tel:+79500308830" className="text-xl font-medium text-white hover:text-electric-blue transition-colors">
+                        +7 950 030 88 30
                       </a>
                     </div>
                   </div>
                   <div className="mt-8">
-                    <a href="tel:89500308830">
+                    <a href="tel:+79500308830">
                       <Button className="w-full bg-gradient-to-r from-electric-blue to-neon-purple hover:from-neon-purple hover:to-electric-blue neon-pulse">
                         Позвонить сейчас
                       </Button>
@@ -61,8 +61,8 @@ const Contacts = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-300">WhatsApp</p>
-                      <a href="https://wa.me/89500308830" className="text-xl font-medium text-white hover:text-green-400 transition-colors">
-                        8 950 030-88-30
+                      <a href="https://wa.me/79500308830" className="text-xl font-medium text-white hover:text-green-400 transition-colors">
+                        +7 950 030 88 30
                       </a>
                     </div>
                   </div>
@@ -76,19 +76,19 @@ const Contacts = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-300">Telegram</p>
-                      <a href="https://t.me/89500308830" className="text-xl font-medium text-white hover:text-blue-400 transition-colors">
-                        8 950 030-88-30
+                      <a href="https://t.me/+79500308830" className="text-xl font-medium text-white hover:text-blue-400 transition-colors">
+                        +7 950 030 88 30
                       </a>
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-2 gap-4 mt-8">
-                    <a href="https://wa.me/89500308830">
+                    <a href="https://wa.me/79500308830">
                       <Button variant="outline" className="w-full border-green-500 text-green-500 hover:bg-green-500/20">
                         WhatsApp
                       </Button>
                     </a>
-                    <a href="https://t.me/89500308830">
+                    <a href="https://t.me/+79500308830">
                       <Button variant="outline" className="w-full border-blue-500 text-blue-500 hover:bg-blue-500/20">
                         Telegram
                       </Button>
@@ -148,9 +148,9 @@ const Contacts = () => {
                 Вызвать электрика в Колпино
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Нет ничего проще — позвоните по телефону 8 950 030-88-30 и забудьте о проблемах с электричеством у вас дома
+                Нет ничего проще — позвоните по телефону +7 950 030 88 30 и забудьте о проблемах с электричеством у вас дома
               </p>
-              <a href="tel:89500308830">
+              <a href="tel:+79500308830">
                 <Button size="lg" className="bg-gradient-to-r from-neon-pink to-neon-purple hover:from-neon-purple hover:to-neon-pink neon-pulse">
                   <PhoneIcon className="mr-2 h-5 w-5" /> Позвонить сейчас
                 </Button>
